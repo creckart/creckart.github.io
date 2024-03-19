@@ -43,18 +43,14 @@ body {
 	position: relative;
 }
 
-h1, h2, p {
-	text-align: center;
-}
-
 h1 {
 	font-weight: 400;
-	font-size: 8rem;
+	font-size: 4rem;
 }
 
 h2 {
 	font-weight: 200;
-	font-size: 5rem;
+	font-size: 2rem;
 }
 
 ul {
@@ -81,3 +77,31 @@ ul {
 	padding: 2rem;
 }
 
+
+/* Welcome Section */
+
+.welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75vh;
+}
+.welcome-section > p {
+	font-size: 3rem;
+	font-weight: 300;
+}
+
+/* Summary Section */
+
+.summary-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 75vh;
+}
+
+.summary-section > 
