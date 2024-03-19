@@ -34,7 +34,7 @@ html {
 
 body {
 	font-size: 2rem;
-	font-weight: 300px;
+	font-weight: 300;
 	line-height: 1.4;
 	
 }
@@ -43,7 +43,41 @@ body {
 	position: relative;
 }
 
-h1 {
-	font-weight: 400;
+h1, h2, p {
 	text-align: center;
 }
+
+h1 {
+	font-weight: 400;
+	font-size: 8rem;
+}
+
+h2 {
+	font-weight: 200;
+	font-size: 5rem;
+}
+
+ul {
+	list-style: none;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.nav-list {
+	display: flex;
+	margin-right: 2rem;
+}
+
+.nav-list a {
+	display: block;
+	font-size: 2rem;
+	padding: 2rem;
+}
+
