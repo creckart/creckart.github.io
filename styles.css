@@ -51,6 +51,7 @@ h1 {
 h2 {
 	font-weight: 200;
 	font-size: 2rem;
+	text-decoration: underline;
 }
 
 ul {
@@ -96,8 +97,7 @@ ul {
 /* Summary Section */
 
 .summary-section {
-	display: list-item;
-	list-style: none;
+	text-align: left;
+	padding: 10rem 2rem;
 }
 
-.summary-section > 
