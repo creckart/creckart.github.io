@@ -1,5 +1,9 @@
 :root {
-	
+	--primary: #F3F7D4;
+	--secondary: #EA202C;
+	--dark-text: #093426;
+	--light-text: #CBE432;
+	--accent: #448D76;
 }
 
 * {
@@ -36,7 +40,8 @@ body {
 	font-size: 2rem;
 	font-weight: 300;
 	line-height: 1.4;
-	
+	background: var(--primary);
+	color: var(--dark-text);
 }
 
 #page-wrapper {
@@ -44,18 +49,24 @@ body {
 }
 
 h1 {
-	font-weight: 400;
-	font-size: 4rem;
+	font-weight: bold;
+	font-size: 4.5rem;
 }
 
 h2 {
-	font-weight: 200;
-	font-size: 2rem;
+	font-weight: bold;
+	font-size: 2.5rem;
 	text-decoration: underline;
+	font-style: italic;
 }
 
 ul {
 	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--light-text);
 }
 
 .nav {
@@ -65,6 +76,8 @@ ul {
 	top: 0;
 	left: 0;
 	width: 100%;
+	background: var(--secondary);
+	z-index: 10;
 }
 
 .nav-list {
@@ -78,26 +91,100 @@ ul {
 	padding: 2rem;
 }
 
+.nav-list a:hover {
+	color: var(--accent);
+}
 
 /* Welcome Section */
 
 .welcome-section {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display: block;
+	block-size: auto;
+	text-align: center;
 	width: 100%;
-	height: 75vh;
+	height: 20vh;
+	padding: 80px 0 20px 0;
 }
+
 .welcome-section > p {
-	font-size: 3rem;
-	font-weight: 300;
+	font-size: 3.25rem;
+	font-weight: bold;
 }
 
 /* Summary Section */
 
 .summary-section {
+	display: block;
+	box-sizing: border-box;
 	text-align: left;
-	padding: 10rem 2rem;
+	padding-left: 40px;
 }
 
+.summary-section > p {
+	text-align: left;
+	padding-left: 50px;
+}
+
+/* Skills Section */
+
+.skills-section {
+	text-align: left;
+	padding-left: 40px;
+}
+
+.skills-section > p {
+	text-align: left;
+	padding-left: 50px;
+}
+
+/* Employment Section */
+
+.employment-section {
+	text-align: left;
+	padding-left: 40px;
+}
+
+.employment-section > div {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.employment-section .job-title {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.employment-section .employer {
+	padding-left: 60px;
+}
+
+.employment-section .employment-dates {
+	padding-left: 60px;
+}
+
+.employment > ul > li {
+	padding-left: 100px;
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+/* Education Section */
+
+.education-section {
+	text-align: left;
+	padding-left: 40px;
+}
+
+.education-section > div {
+	text-align: left;
+	padding-left: 50px;
+}
+
+.education-section .education-provider {
+	text-align: left;
+	font-weight: bold; 
+}
+
+.education-section .education-details {
+	padding-left: 60px; 
+}
