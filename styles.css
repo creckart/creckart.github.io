@@ -114,8 +114,6 @@ a {
 /* Summary Section */
 
 .summary-section {
-	display: block;
-	box-sizing: border-box;
 	text-align: left;
 	padding-left: 40px;
 }
