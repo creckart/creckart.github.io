@@ -1,147 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>RCR Resume Website</title>
-	<link href="styles.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact-section">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-<body>
-	<!-- NAVBAR -->
-	<nav id="navbar" class="nav">
-		<ul class="nav-list">
-			<li>
-				<a href="#summary-section">Professional Summary</a>
-			</li>
-			<li>
-				<a href="#skills-section">Skills</a>
-			</li>
-			<li>
-				<a href="#employment-section">Employment History</a>
-			</li>
-			<li>
-				<a href="#education-section">Education/Professional Development</a>
-			</li>
-			<li>
-				<a href="#project-section">Project Portfolio</a>
-			</li>
-			<li>
-				<a href="#contact-section">Contact Me</a>
-			</li>
-		</ul>
-	</nav>
-	
-	<!-- Welcome -->
-	<section id="welcome" class="welcome-section">
-		<h1><u>Robert Cory Reckart</u></h1>
-		<p><u>Database Administrator</u></p>
-		<p><u>Seven Years Experience</u></p>
-	</section>
-	
-	<!-- Professional Summary -->
+    <!-- WELCOME -->
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hello, I'm Cory!</h1>
+      <p>a full stack developer</p>
+    </section>
 
-	<!-- <section id="summary-section" class="summary-section">
-		<h2 class="resume-header">Professional Summary</h2>
-		<p class="summary-description">Results driven professional with six years of experience in data analysis and database administration. Skilled in Python, business intelligence, and other database administration tools. Continuously striving to produce clean and correct data, that is easily searchable and reportable.</p>
-	</section> -->
-	
-	<!-- Skills -->
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section">
+      <h2 class="projects-header">View some of my projects here</h2>
+      <div class="projects-grid">
+        <a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
+          <img class="project-image" id="survey-form-img" href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRiAUDXFQeAxJtI-ssUIJ5UJR5EWOhiMmUC6iyf_SAbE7lp1BqBeEqRrCcC5Q8mdp8aB9Zhbj2Ihnz7zGKJpeUwNhSP=s2560?source=screenshot.guru" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYRiAUDXFQeAxJtI-ssUIJ5UJR5EWOhiMmUC6iyf_SAbE7lp1BqBeEqRrCcC5Q8mdp8aB9Zhbj2Ihnz7zGKJpeUwNhSP=s2560">
+          <p class="project-title">Dragon Ball Survey Form</p>
+        </a>
+        <a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
+          <img class="project-image"
+          id="tribute-img"
+          href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTMkMXkKiHX0Q0QYgpe_I3TgRMYRBQyO1aJiOX_i0zTEqe1FuwNkmzFx6jpt0IgXGg83-HY7gCnjg0Z09oOwg7yOq2tWA=s2560?source=screenshot.guru" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTMkMXkKiHX0Q0QYgpe_I3TgRMYRBQyO1aJiOX_i0zTEqe1FuwNkmzFx6jpt0IgXGg83-HY7gCnjg0Z09oOwg7yOq2tWA=s2560"
+          alt="macho-man-tribute-page">
+          <p class="project-title">Tribute Page</p>
+        </a>
+        <a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
+          <img class="project-image" id="technical-documentation-img" href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR7gRPUBOPNbBpIPbEBoW30m1tEMi-9W1KO2a4SSehlGmG8SXYd_mUScWmC0ChMGnuG1vbsjwU7thdXIYq79pYQ8OYnYA=s1600?source=screenshot.guru" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYR7gRPUBOPNbBpIPbEBoW30m1tEMi-9W1KO2a4SSehlGmG8SXYd_mUScWmC0ChMGnuG1vbsjwU7thdXIYq79pYQ8OYnYA=s1600">
+          <p class="project-title">Technical Documentation</p>
+        </a>
+        <a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
+          <img class="project-image" id="product-landing-page-img" href="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSB46r-TWm9I90CFCcEzWJbiNJfpC8e0KJn8NJwFLAxr_y7iFBVG5pdBDrIkGCfpVhE1uh8CHHJODOMRpgvifr360Vs7Q=s1600?source=screenshot.guru" src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYSB46r-TWm9I90CFCcEzWJbiNJfpC8e0KJn8NJwFLAxr_y7iFBVG5pdBDrIkGCfpVhE1uh8CHHJODOMRpgvifr360Vs7Q=s1600">
+          <p class="project-title">Product Landing Page</p>
+        </a>
+      </div>
+    </section>
 
-	<!-- <section id="skills-section" class="skills-section">
-		<h2 class="resume-header">Skills</h2>
-		<p class="skills-description">Proficient in Microsoft Office Suite, Strategic Planning, Dundas BI, Java, C#, C++, HTML, CSS, SQL, Python and VoIP Telecom Administration.</p>
-	</section> -->
-	
-	<!-- Employment -->
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>How can I help?</h2>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="https://github.com/creckart" target="_blank" class="btn contact-details">
+        <i class="fab fa-github">
+          GitHub
+        </i>
+        </a>
+        <a href="mailto:fakeemail@fake.com" class="btn contact-details">
+        <i class="fas fa-at">
+          Email Me
+        </i>
+        </a>
+        <a href="tel:555-555-5555" class="btn contact-details">
+        <i class="fas fa-mobile-alt">
+          Call or Text Me
+        </i>
+        </a>
+      </div>
+    </section>
 
-	<!-- <section id="employment-section" class="employment-section">
-		<h2 class="resume-header">Employment History</h2>
-		<div class="employment">
-			<p class="job-title">Database Administrator</p>
-			<p class="employer">Garrett County Community Action Committee, Oakland, MD</p>
-			<p class="employment-dates">Nov. 2016 - Jan. 2024</p>
-			<ul>
-				<li>Coordinate data entry and data tracking across 8+ project sites and provide technical support</li>
-				<li>Analyze data correlations between 6 different data systems</li>
-				<li>Demonstrate database technical functionality, such as performance, security, and reliability</li>
-				<li>Collaborate with system architects and software engineers to enhance end-user usability</li>
-				<li>Identify and correct deviations from database development standards</li>
-				<li>Lead VoIP telecom administrator</li>
-			</ul>
-			<p class="job-title">CAD Draftsman</p>
-			<p class="employer">Thrasher Engineering, Oakland, MD</p>
-			<p class="employment-dates">Apr. 2016 - Sep. 2016</p>
-			<ul>
-				<li>Consult with engineers to discuss and interpret design concepts and determine requirements of 80% detailed working drawings</li>
-				<li>Draft detail and assembly drawings of design components, using computer-assisted equipment or standard drafting techniques and devices</li>
-				<li>Locate files relating to specified design project in database library, load program into computer, and record completed job data</li>
-			</ul>
-			<p class="job-title">Customer Service Representative</p>
-			<p class="employer">The Active Network, Frostburg, MD</p>
-			<p class="employment-dates">July 2013 - Apr. 2016</p>
-			<ul>
-				<li>Listen to customer requests, referring to directories to answer questions and provide information</li>
-				<li>Update directory information.</li>
-				<li>Confer with customers by telephone or in person to provide information about products or services, take or enter orders, cancel accounts, or obtain details of complaints</li>
-				<li>Keep records of customer interaction, recording details of inquiries, complaints, or comments</li>
-			</ul>
-		</div>
-	</section> -->
-	
-	<!-- Education -->
+    <!-- FOOTER -->
+    <footer>
+      <p>** This is a fake portfolio. All the projects ans contact details given are not real.</p>
+      <p>
+        © Created for
+          <a href="https://www.freecodecamp.com/" target="_blank">freeCodeCamp <i class="fab fa-free-code-camp"></i></a>
+       </p>
+    </footer>
 
-	<!-- <section id="education-section" class="education-section">
-		<h2 class="resume-header">Education/Professional Development</h2>
-		<div class="education">
-			<p class="education-provider">University of Maryland - Global Campus, Adelphi, MD</p>
-			<p class="education-details">Bachelor of Science (Pending), Computer Science</p>
-			<p class="education-provider">Frostburg State University, Frostburg, MD</p>
-			<p class="education-details">Bachelor of Science, History, Aug. 2015</p>
-			<p class="education-provider">Garrett College, McHenry, MD</p>
-			<p class="education-details">Associate of Arts, General Studies, June 2010</p>
-			<p class="education-provider">freeCodeCamp, Online</p>
-			<p class="education-details">Responsive Web Design, Relational Databases</p>
-			<p class="education-provider">Dundas BI</p>
-			<p class="education-details">Dundas BI Certified Analyst, Certificate ID: BMY0I6u91O</p>
-			<p class="education-provider">Department of Housing and Urban Development</p>
-			<p class="education-details">HMIS Data Analytics On-Demand Course</p>
-		</div>
-	</section> -->
-	
-	<!-- Projects -->
-
-	<section id="project-section" class="project-section">
-		<h2 class="projects-header">Project Portfolio</h2>
-		<div class="projects-grid">
-			<a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
-				<img class="project-image" id="survey-form-img" src="https://drive.google.com/thumbnail?sz=w1000&id=1eNKBkPvCmKl_jw8D2_mUdrQk-n1VTtVq" alt="dragon-ball-survey-form">
-				<p class="project-title">Dragon Ball Survey Form</p>
-			</a>
-			<a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
-				<img class="project-image" id="tribute-img" src="https://drive.google.com/thumbnail?sz=w1000&id=1-ER-xCQxCTLawTRG-3hZwhKB1NxOhc1V" alt="macho-man-tribute-page">
-				<p class="project-title">Tribute Page</p>
-			</a>
-			<a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
-				<img class="project-image" id="technical-documentation-img" src="https://drive.google.com/thumbnail?sz=w1000&id=19G4VS4lEeqq19s0eo5kIhuRLGvdIYy9w" alt="technical-documentation">
-				<p class="project-title">Technical Documentation</p>
-			</a>
-			<a href="https://codepen.io/creckart/pen/ExGxrvB" target="_blank" class="project project-tile">
-				<img class="project-image" id="product-landing-page-img"> <img src="https://drive.google.com/thumbnail?sz=w1000&id=1KFMoC0ZoDsKcAYma0JDR2z-UqcYh3hPO">
-				<p class="project-title">Product Landing Page</p>
-			</a>
-		</div>
-	</section>
-	
-	<!-- Contact -->
-
-	<section id="contact-section" class="contact-section">
-		<div class="contact-section-header">
-			<h2>Contact Information</h2>
-		</div>
-		<div class="contact-links">
-		</div>
-	</section>
-	
-</body>
+  </body>
 </html>
